@@ -6,3 +6,5 @@ class Musician(models.Model):
     instrument = models.CharField(max_length=30)
     age = models.IntegerField()
     
+    def __str__(self):
+        return f"Name: {self.name}, Instrument: {self.instrument}, Age: {self.age}"
